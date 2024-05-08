@@ -17,16 +17,33 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+  background: #f5f5f3;
 }
 
 @layer utilities {
+  .nav-text{
+    @apply translate-y-[-100px]
+  }
+  .text-grad{
+    @apply bg-gradient-to-tl from-stone-500 to-zinc-900 bg-clip-text text-transparent
+  }
+  .text-hero{
+    @apply font-sans font-bold  text-[28px] sm:text-[38px] md:text-[56px] uppercase bg-gradient-to-tl from-stone-500 to-zinc-900 bg-clip-text text-transparent text-center 
+  }
+  .flex-center{
+    @apply flex items-center justify-center;  
+  }
+  .round-block{
+    @apply before:content-[""] before:w-[8px] before:h-[8px] before:rounded-full before:bg-black before:inline-block before:absolute before:left-0 before:top-0 before:bottom-0 before:my-auto before:mr-auto;
+  }
+  .round-block-white{
+    @apply before:content-[""] before:w-[8px] before:h-[8px] before:rounded-full before:bg-white before:inline-block before:absolute before:left-0 before:top-0 before:bottom-0 before:my-auto before:mr-auto;
+  }
+  
+  .common-padding{
+   @apply max-w-[90rem] xl:mx-auto p-5 md:px-10 lg:px-11  w-full;
+  }
   .text-balance {
     text-wrap: balance;
   }
