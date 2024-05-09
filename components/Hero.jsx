@@ -18,8 +18,9 @@ const Hero = () => {
             <div className=" grid grid-cols-1  lg:py-[50px] gap-5 sm:gap-0 ">
                 <div className='col-span-2 flex-center flex-col '>
                     <h1 className='text-hero opacity-0 hero-text text-center' >Hey,I'm Mishal </h1>
-                    <h3 className='text-hero opacity-0 hero-text lg:w-[900px]'>A passionate Web Developer From India</h3>
-                    <button className=' mt-5 hero-text opacity-0 font-sans font-normal w-[200px] h-[50px] flex-center bg-gradient-to-tl from-gray-500 to-gray-900 rounded-full text-white '>
+                    <h3 className='text-hero opacity-0 hero-text lg:w-[900px]'>A passionate Web Developer </h3>
+                    <button className='relative  mt-5 hero-text opacity-0 font-sans font-normal w-[200px] h-[50px] flex-center bg-gradient-to-tl from-gray-500 to-gray-900 rounded-full text-white '>
+                        <a href='/assets/document/cv.pdf' className='absolute w-full h-full' download></a>
                         <AnimatedText title={'Download CV'}/>
                     </button>
                     </div>

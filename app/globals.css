@@ -19,9 +19,13 @@
 body {
   /* color: rgb(var(--foreground-rgb)); */
   background: #f5f5f3;
+  position: relative;
 }
 
 @layer utilities {
+  .open-nav{
+    @apply block transition-all translate-x-5 duration-700 
+  }
   .nav-text{
     @apply translate-y-[-100px]
   }

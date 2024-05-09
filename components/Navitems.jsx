@@ -1,4 +1,3 @@
-
 import { navItems } from '@/cosntants'
 import Link from 'next/link'
 import AnimatedText from './AnimatedText'

@@ -30,7 +30,7 @@ const Footer = () => {
   }
 
   return (
-    <footer id='contact-form' className='sticky z-10  bg-gradient-to-r from-gray-800 to-neutral-800 pt-[100px] bottom-0   overflow-hidden flex flex-col'>
+    <footer id='contact-form' className='sticky z-10  bg-gradient-to-r from-gray-800 to-neutral-800 pt-[200px] sm:pt-[100px] bottom-0   overflow-hidden flex flex-col'>
       <div className='bg-white py-2 '>
         <div className='relative whitespace-nowrap flex' >
           <p className='text-[5vw] font-sans font-bold  text-grad uppercase ' ref={firstText}>Lets Create Project Together</p>

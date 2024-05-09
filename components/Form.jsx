@@ -8,13 +8,22 @@ const Form = () => {
     const [data,setData] =useState({
         name:'',email:'',about:'',projectname:''
      })
-
+    const [active,setActive] = useState(false)
+    const notification = document.getElementById('notification-bar')
     const handleSubmit =(e)=>{
-
+        setActive(true)
         e.preventDefault();
         emailjs.send('service_ukcbypn','template_mb9uetv',data,'HU4l0DpnTc6FV74vH')
         .then(() =>{
             console.log('success');
+            setData({
+                name:'',email:'',about:'',projectname:''
+            })
+            setActive(false);
+             notification.classList.add('open-nav')
+             setTimeout(() => {
+                notification.classList.remove('open-nav')
+             }, 4000);
         },
         (error) =>{
             console.log('error',error);
@@ -58,8 +67,8 @@ const Form = () => {
         </div>
         </div>
         <div className='flex justify-end'>
-            <button type='submit' className=' mt-5 hero-text opacity-0 font-sans font-normal w-[200px] h-[50px] flex-center bg-gradient-to-tl from-gray-500 to-gray-900 rounded-full text-white '>
-                        <AnimatedText title={'Submit'}/>
+            <button type='submit' disabled={active} className=' mt-5 hero-text opacity-0 font-sans font-normal w-[200px] h-[50px] flex-center bg-gradient-to-tl from-gray-500 to-gray-900 rounded-full text-white '>
+                       {active ? 'submitting' : 'submit'}
                     </button>
         </div>
     </form>

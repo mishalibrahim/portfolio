@@ -29,7 +29,7 @@ const Skills = () => {
                         SkillsItem.map((item, i) => (
                             <div
                                 id='skill-item'
-                                className='h-[50px] translate-y-5 flex-center shadow-ms border-4 rounded-full relative overflow-hidden hover:shadow-[5px_5px_0px_0px_rgba(102,102,102)] opacity-0' key={i}>
+                                className='h-[50px] translate-y-5 flex-center shadow-ms border-4  rounded-full relative overflow-hidden hover:shadow-[5px_5px_0px_0px_rgba(102,102,102)] opacity-0' key={i}>
                                 <p className='font-sans'>{item.title}</p>
                                 <div className='absolute right-[-10px] top-0 w-[50px] h-[50px]'>
                                     <Image src={item.src} width={50} height={50} alt={item.title} className='object-cover rotate-45 ' />

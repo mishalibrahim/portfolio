@@ -8,7 +8,6 @@ const ProjectTemplate = ({item,index,setModal}) => {
             {item.title}</h2> 
         <p className='font-sans text-[12px] sm:text-[16px] flex-center text-gray-600 group-hover:translate-x-[-12px] transition-all ease-linear duration-200'>
             Frontend</p>
-
     </Link>
   )
 }
