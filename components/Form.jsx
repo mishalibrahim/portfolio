@@ -1,6 +1,5 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
-import AnimatedText from './AnimatedText'
 import emailjs from 'emailjs-com'
 
 const Form = () => {
@@ -8,21 +7,29 @@ const Form = () => {
     const [data,setData] =useState({
         name:'',email:'',about:'',projectname:''
      })
-    const [active,setActive] = useState(false)
-    const notification = document.getElementById('notification-bar')
+    const [active,setActive] = useState(false);
+    const [notify,setNotify] =useState(false)
+    useEffect(()=>{
+        const notification = document.getElementById('notification-bar')
+        if(notify){
+            notification.classList.add('open-nav')
+        }
+        else{
+            notification.classList.remove('open-nav')
+        }
+    },[notify])
     const handleSubmit =(e)=>{
         setActive(true)
         e.preventDefault();
         emailjs.send('service_ukcbypn','template_mb9uetv',data,'HU4l0DpnTc6FV74vH')
         .then(() =>{
-            console.log('success');
+            setNotify(true)
             setData({
                 name:'',email:'',about:'',projectname:''
             })
             setActive(false);
-             notification.classList.add('open-nav')
              setTimeout(() => {
-                notification.classList.remove('open-nav')
+                setNotify(false)
              }, 4000);
         },
         (error) =>{
