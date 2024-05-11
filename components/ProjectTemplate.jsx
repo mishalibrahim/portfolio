@@ -15,7 +15,7 @@ const ProjectTemplate = ({item,index,setModal}) => {
   return (
     <div className='flex flex-col w-full opacity-0 gap-2 sm:gap-0' ref={projectRef}>
         <div className='flex sm:hidden '>
-            <Image src={item.src} width={100} height={100} alt={item.title} className='w-full'/>
+            <Image src={item.src} width={400} height={300} alt={item.title} className='w-full object-cover '/>
         </div>
       <Link href={item.href}  className='sm:py-10 py-3 border-b-2 sm:border-y-2 sm:border-b-0 border-black/60 sm:border-black/20 flex  items-center justify-between w-full md:px-20 group ' onMouseEnter={()=>setModal({active:true,index:index})} onMouseLeave={()=>setModal({active:false,index:index})}>
         <h2 className='font sans text-[24px] sm:text-[50px] font-semi-bold group-hover:text-gray-600 group-hover:translate-x-3 transition-all ease-linear duration-200'>

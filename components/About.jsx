@@ -14,10 +14,10 @@ const About = () => {
     })
   })
   return (
-   <section className='w-full h-full transition-all' id='About'>
+   <section className='w-full h-full transition-all py-[50px]' id='About'>
       <div className='lg:p-[100px] flex-center'>
-          <p id='About-text' className='font-sans font-medium text-[18px] lg:text-[30px] lg:w-[900px] opacity-0 text-gray '>
-            <span className='font-bold lg:text-[38px] text-[20px] '>Mishal{' '}</span>
+          <p id='About-text' className='font-sans font-medium text-[18px] lg:text-[35px] md:w-[600px] lg:w-[800px] opacity-0 text-gray translate-y-20'>
+            <span className='font-bold md:text-[30px] lg:text-[40px] text-[20px] '>Mishal{' '}</span>
              is a full-stack developer with a passion for crafting exceptional user experiences through front-end development.
              With a keen focus on creating intuitive
              interfaces and delivering seamless interactions, I strive to elevate digital experiences to new heights.

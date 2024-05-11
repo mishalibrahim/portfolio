@@ -14,7 +14,7 @@ const Hero = () => {
         })
     },[])
     return (
-        <div className='w-full py-[50px]  flex-center'>
+        <div className='w-full py-[55px]  flex-center'>
             <div className=" grid grid-cols-1  lg:py-[50px] gap-5 sm:gap-0 ">
                 <div className='col-span-2 flex-center flex-col '>
                     <p className='font-sans sm:text-[28px] text-[18px] font-bold opacity-0 hero-text text-center text-grad pt-5' >Hey,I'm Mishal<span className='text-yellow-400'>&#129304;</span>  </p>
