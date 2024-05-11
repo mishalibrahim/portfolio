@@ -32,8 +32,9 @@ body {
   .text-grad{
     @apply bg-gradient-to-tl from-stone-500 to-zinc-900 bg-clip-text text-transparent
   }
+  
   .text-hero{
-    @apply font-sans font-bold  text-[28px] sm:text-[38px] md:text-[56px] uppercase bg-gradient-to-tl from-stone-500 to-zinc-900 bg-clip-text text-transparent text-center 
+    @apply font-sans font-bold  text-[26px] sm:text-[38px] md:text-[40px] uppercase bg-gradient-to-tl from-stone-500 to-zinc-900 bg-clip-text text-transparent text-center 
   }
   .flex-center{
     @apply flex items-center justify-center;  

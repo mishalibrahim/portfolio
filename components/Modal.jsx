@@ -14,8 +14,25 @@ const Modal = ({modal,projects}) => {
         },
         open:{
             scale:1,
+            x:'0%',
+            y:'0%',transition:{duration:0.4 ,ease:[0.76,0,0.24,1]}
+        },
+        close:{
+            scale:0,
             x:'-50%',
-            y:'-50%',transition:{duration:0.4 ,ease:[0.76,0,0.24,1]}
+            y:'-50%',transition:{duration:0.4 ,ease:[0.32,0,0.67,0]}
+        }
+    }
+    const scaleTextAnimation ={
+        initial:{
+            scale:0,
+            x:'-50%',
+            y:'-50%'
+        },
+        open:{
+            scale:1,
+            x:'100%',
+            y:'100%',transition:{duration:0.4 ,ease:[0.76,0,0.24,1]}
         },
         close:{
             scale:0,
@@ -38,11 +55,11 @@ const Modal = ({modal,projects}) => {
             const containerWidth = container.current.offsetWidth;
             const centerX = clientX - containerWidth / 2;
             const containerHeight = container.current.offsetHeight;
-            const centerY = clientY - containerHeight ;
+            const centerY = clientY - containerHeight / 2 ;
             const mouseWidth = container.current.offsetWidth;
             const mousecenterX = clientX - mouseWidth / 2;
             const mosueHeight = container.current.offsetHeight;
-            const mousecenterY = clientY - mosueHeight ;
+            const mousecenterY = clientY - mosueHeight / 2 ;
             moveContainerX(centerX);
             moveContainerY(centerY);
             mouseContainerX(mousecenterX);
@@ -52,7 +69,7 @@ const Modal = ({modal,projects}) => {
 
   return (
     <>
-    <motion.div ref={container} variants={scaleAnimation} initial={'initial'} animate={active ? 'open' :'close'} className='hidden  pointer-events-none absolute  md:flex-center  w-[240px] h-[250px] overflow-hidden'>
+    <motion.div ref={container} variants={scaleAnimation} initial={'initial'} animate={active ? 'open' :'close'} className='hidden  pointer-events-none  fixed   md:flex-center  w-[240px] h-[250px] overflow-hidden'>
         <div className={`w-full h-full  absolute transition-all duration-500 `} style={{top: index * -100 + '%'}}>
         {
             projects.map((item,i)=>{
@@ -64,7 +81,7 @@ const Modal = ({modal,projects}) => {
         }
         </div>
     </motion.div>
-    <motion.div variants={scaleAnimation} initial={'initial'} animate={active ? 'open' :'close'}  ref={mouseContainer} className='hidden  pointer-events-none md:flex-center w-[80px] h-[80px] rounded-full bg-blue-500 absolute'>
+    <motion.div variants={scaleTextAnimation} initial={'initial'} animate={active ? 'open' :'close'}  ref={mouseContainer} className='hidden  pointer-events-none md:flex-center w-[80px] h-[80px] rounded-full bg-blue-500 fixed'>
         <p  className='text-white font-sans'>View</p>
     </motion.div>
     </>

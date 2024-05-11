@@ -88,24 +88,28 @@ export const projectList =[
         title:'Evently',
         src:'/assets/images/event.png',
         color:'#9AC8CD',
-        href:'https://evently-platform-kappa.vercel.app/'
+        href:'https://evently-platform-kappa.vercel.app/',
+        subtitle:'Design & Development'
     },
     {
         title:'AppleClone',
         src:'/assets/images/apple.png',
         color:'#E2DFD0',
-        href:'https://appleclone-peach.vercel.app/'
+        href:'https://appleclone-peach.vercel.app/',
+        subtitle:'Design '
     },
     {
         title:'Promptopia',
         src:'/assets/images/prompt.png',
         color:'#9CAFAA',
-        href:'https://project-promtopia-theta.vercel.app/'
+        href:'https://project-promtopia-theta.vercel.app/',
+        subtitle:'Design & Development'
     },
     {
         title:'WeatherApp',
         src:'/assets/images/weather.png',
         color:'#31363F',
-        href:'https://mishalibrahim.github.io/weatherapp/'
+        href:'https://mishalibrahim.github.io/weatherapp/',
+        subtitle:'Design & Development'
     },
 ]

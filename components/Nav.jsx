@@ -62,7 +62,7 @@ const Nav = () => {
           <Link href='#contact-form' className='round-block'>Contact me</Link>
         </div>
         <div className={`nav-text flex md:hidden relative w-[60px] flex-center h-[40px]}`}>
-          <Link href='/' className='round-block' onClick={handleClick}>{isActive ? 'Close' : 'Menu'}</Link>
+          <Link href='/' className='round-block font-sans pl-2' onClick={handleClick}>{isActive ? 'Close' : 'Menu'}</Link>
         </div>
       </div>
       <MobileNav Active={isActive} />
