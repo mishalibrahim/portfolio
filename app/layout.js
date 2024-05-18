@@ -11,8 +11,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "MishalIbrahim",
-  description: "Mishals personal portfolio",
+  title: "Mishal Ibrahim - Front-End Developer & Full-Stack Enthusiast",
+  description: "Explore Mishal Ibrahim's personal portfolio showcasing projects, skills, and expertise in front-end development, React, and full-stack technologies. Discover his journey and professional accomplishments in web development.",
 };
 
 export default function RootLayout({ children }) {
