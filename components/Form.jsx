@@ -74,8 +74,8 @@ const Form = () => {
         </div>
         </div>
         <div className='flex justify-end'>
-            <button type='submit' disabled={active} className=' mt-5 hero-text opacity-0 font-sans font-normal w-[200px] h-[50px] flex-center bg-gradient-to-tl from-gray-500 to-gray-900 rounded-full text-white '>
-                       {active ? 'submitting' : 'submit'}
+            <button type='submit' disabled={active} className=' mt-5 hero-text opacity-0 font-sans font-normal w-[150px] text-gray-50 h-[50px] flex-center bg-gradient-to-r from-zinc-600 to-zinc-500   shadow-md rounded-full  '>
+                       {active ? 'Submitting' : 'Submit'}
                     </button>
         </div>
     </form>

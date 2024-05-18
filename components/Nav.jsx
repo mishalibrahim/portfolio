@@ -65,7 +65,7 @@ const Nav = () => {
           <Link href='/' className='round-block font-sans pl-2' onClick={handleClick}>{isActive ? 'Close' : 'Menu'}</Link>
         </div>
       </div>
-      <MobileNav Active={isActive} />
+      <MobileNav Active={isActive} setActive={setIsActive} />
     </header>
   )
 }

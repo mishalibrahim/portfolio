@@ -14,7 +14,7 @@ const About = () => {
     })
   })
   return (
-   <section className='w-full h-full transition-all py-[50px]' id='About'>
+   <section className='w-full h-full transition-all pt-[100px] sm:pt-0  py-[50px]' id='About'>
       <div className='lg:p-[100px] flex-center'>
           <p id='About-text' className='font-sans font-medium text-[18px] lg:text-[35px] md:w-[600px] lg:w-[800px] opacity-0 text-gray translate-y-20'>
             <span className='font-bold md:text-[30px] lg:text-[40px] text-[20px] '>Mishal{' '}</span>
